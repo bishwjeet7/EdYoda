@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+.navbar {
+    background-color: #FFFFFF;
+    color: #000000;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    font-style: Raleway;
+    font-weight: 500;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+    height: 45px;
+    width: 158px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.left_content {
+    display: flex;
+}
+
+.left_content div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 0% 0 20%;
+}
+
+.fa-angle-down {
+    margin-left: 8px;
+}
+
+.right_content {
+    width: 30%;
+    position: relative;
+    display: flex;
+    padding: 0 6% 0 0%;
+
+    /* left: 38%; */
+    align-items: center;
+}
+
+.right_content div {
+    margin-left: 15%;
+    /* padding: 24px 80px */
+}
+
+.joinnow {
+    background: linear-gradient(266.79deg, #0048FF 4.63%, #0096FF 100%);
+    padding: 10px 42px 10px 42px;
+    border-radius: 52px;
+}
+
+
+/*Main page*/
+.main_page {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40rem 40rem;
+    height: 105vh;
+    background-image: url('./image/BackGround.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.heading {
+    color: #FFFFFF;
+}
+
+.main_left_box {
+    font-family: Raleway;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    text-align: left;
+    margin: 38px 0 0 144px;
+    
+}
+
+
+.highlites_detail img {
+    height: 48.79988098144531px;
+    width: 48.45628356933594px;
+    border-radius: 0px;
+}
+
+.highlites_detail h2 {
+    margin-left: 20px;
+    padding: 2px;
+}
+
+.highlites_detail {
+    display: flex;
+    align-items: center;
+}
+.marginbottom{
+    margin-bottom: 6px;
+    border-radius: 4px;
+}
+
+
+
+@media (max-width: 768px) {
+    body{
+        width: 100%;
+    }
+    .main_page{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        
+    }
+
+    .main_left_box{
+        margin-left: 40px;
+    }
+
+    .navbar{
+        display: inline-block;
+    }
+
+    .right_content{
+        display: none;
+    }
+
+    .left_content div:nth-child(2){
+        display: none;
+    }
+
+    .left_content div:nth-child(3){
+        display: none;
+    }
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  
